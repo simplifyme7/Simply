@@ -41,4 +41,4 @@ The bot will start listening to messages in the specific channel of your Discord
 ## Discord
 
 - You can join the official SimplyAI discord server and use Simply for free at https://discord.gg/jDGJms44Cw
-- Optionally, you can also add Simply to your own server with https://discord.gg/jDGJms44Cw
+- Optionally, you can also add Simply to your own server with https://discord.com/oauth2/authorize?client_id=1161496541421391884
