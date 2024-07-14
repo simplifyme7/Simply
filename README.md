@@ -8,7 +8,9 @@ Simply supports a variety of file types, including images, PDFs, and text files.
 
 While Simply excels in understanding legal jargon, it’s also multilingual, capable of communicating in over 45 languages. Whether you’re a casual user looking to understand what you’re agreeing to or a frequent navigator of online agreements, Simply is your go-to tool for clarity and simplicity. Best of all, Simply is free to use and extensively trained on a diverse dataset of legal documents.
 
-With Simply by your side, navigating the legal landscape has never been easier. Discover more about Simply and its features on the SimplyAI discord server, where understanding legal terms is made simple.
+With Simply by your side, navigating the legal landscape has never been easier. Discover more about Simply and its features on the [SimplyAI](https://discord.gg/jDGJms44Cw) discord server, where understanding legal terms is made simple.
+
+Made by [Simplify Me.](https://simplify-me.com/)
 
 ## Key Features
 
