@@ -44,6 +44,7 @@ The bot will start listening to messages in the specific channel of your Discord
 - **Mention or reply to the bot to activate:** History only works on pure text input
 - `/reset`: Resets and clears the user chat history with the bot. History automatically resets after 15 messages.
 - `/info`: Provides basic info and description about Simply.
+- `/classification`: Describes the classification of grades scored by Simply.
 
 ## Discord
 
