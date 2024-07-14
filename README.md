@@ -10,7 +10,7 @@ While Simply excels in understanding legal jargon, it’s also multilingual, cap
 
 With Simply by your side, navigating the legal landscape has never been easier. Discover more about Simply and its features on the [SimplyAI](https://discord.gg/jDGJms44Cw) discord server, where understanding legal terms is made simple.
 
-Made by [Simplify Me.](https://simplify-me.com/)
+Created by [Simplify Me.](https://simplify-me.com/)
 
 ## Key Features
 
