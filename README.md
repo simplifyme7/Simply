@@ -15,7 +15,7 @@ Created by [Simplify Me.](https://simplify-me.com/)
 ## Key Features
 
 - **AI-Driven Text Responses:** Simply can generate text responses to messages using Google's generative AI.
-- **5+ File Types Supported:** Simply can also respond to images, PDFs, text files and more. (Images should be under 2.5 MBs)
+- **5+ File Types Supported:** Simply can also respond to images, PDFs, text files and more. (Images should be under 2.5 MB)
 - **User Message History Management:** Simply maintains a history of user interactions via discordIDs, allowing for context-aware conversations.
 - **Customizable Settings:** Users can adjust various parameters like message history length and AI response settings. Learn more in the [Customization](#customization) section.
 
