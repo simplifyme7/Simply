@@ -100,7 +100,7 @@ async def process_message(message):
         async with message.channel.typing():
             if message.attachments:
                 for attachment in message.attachments:
-                    print(f"{message.author.name} : IMAGE + {cleaned_text}")
+                    print(f"{message.author.name} : ATTACHMENT + {cleaned_text}")
                     if any(attachment.filename.lower().endswith(ext) for ext in ['.png', '.jpg', '.jpeg', '.gif', '.webp']):
                         print("Processing Image")
                         await message.add_reaction('🖼️')
@@ -119,10 +119,12 @@ async def process_message(message):
                                 return
                     elif any(attachment.filename.lower().endswith(ext) for ext in ['.mp3', '.wav', '.aac', '.flac', '.ogg']):
                         await message.add_reaction('❌')
+                        await message.add_reaction('🎵')
                         await message.channel.send("⚠️ Unfortunately, I can't hear audio files, but I can help you with decoding any legal gibberish in images and documents!")
                         return
                     elif any(attachment.filename.lower().endswith(ext) for ext in ['.mp4', '.mov', '.avi', '.mkv', '.flv']):
                         await message.add_reaction('❌')
+                        await message.add_reaction('🎥')
                         await message.channel.send("⚠️ Unfortunately, I can't watch videos, but I can help you with decoding any legal gibberish in images and documents!")
                         return
                     elif any(attachment.filename.lower().endswith(ext) for ext in ['.pdf', '.txt']):
@@ -212,7 +214,7 @@ def clean_discord_message(text):
 
 #---------------------------------------------Scraping Text from URL-------------------------------------------------
 
-async def process_attachments(message,prompt):
+async def process_attachments(message, prompt):
     if prompt == "":
         prompt = SUMMERIZE_PROMPT  
     for attachment in message.attachments:
@@ -222,23 +224,15 @@ async def process_attachments(message,prompt):
                 if resp.status != 200:
                     await message.channel.send('Unable to download the attachment.')
                     return
-                if attachment.filename.lower().endswith('.pdf'):
-                    print("Processing PDF")
-                    try:
-                        pdf_data = await resp.read()
-                        response_text = await process_pdf(pdf_data,prompt)
-                    except Exception as e:
-                        await message.channel.send("⚠️ Unfortunately, this file is not supported, but I can help you with decoding any legal gibberish in images and other documents!")
-                        return
-                else:
-                    try:
-                        text_data = await resp.text()
-                        response_text = await generate_response_with_text(prompt+ ": " + text_data)
-                    except Exception as e:
-                        await message.channel.send("⚠️ Unfortunately, this file is not supported, but I can help you with decoding any legal gibberish in images and other documents!")
-                        return
-
-                await split_and_send_messages(message, response_text, 1700)
+                try:
+                    text_data = await resp.text()
+                    response_data = await generate_response_with_text(prompt + ": " + text_data)
+                    if response_data['error']:
+                        await message.channel.send(response_data['message'])
+                    else:
+                        await split_and_send_messages(message, response_data['message'], 1700)
+                except Exception as e:
+                    await message.channel.send("⚠️ An error occurred while processing the file.")
                 return
 
 #---------------------------------------------PDF and Text Processing Attachments-------------------------------------------------
@@ -261,10 +255,13 @@ def extract_url(text):
 
 async def process_url(text):
     url = extract_url(text)
-    response_text = "No summary available"
     if url:
-        response_text = await fetch_and_summarize_url(url)
-    return response_text
+        response_data = await fetch_and_summarize_url(url)
+        if response_data['error']:
+            return response_data['message']
+        else:
+            return response_data['message']
+    return "No summary available"
 
 async def fetch_and_summarize_url(url):
     async with aiohttp.ClientSession() as session:
@@ -272,8 +269,7 @@ async def fetch_and_summarize_url(url):
             html = await response.text()
             soup = BeautifulSoup(html, 'html.parser')
             page_text = ' '.join([p.get_text() for p in soup.find_all('p')])
-            summary = await generate_response_with_text(SUMMERIZE_PROMPT + page_text)
-            return summary
+            return await generate_response_with_text(SUMMERIZE_PROMPT + page_text)
 
 #---------------------------------------------Run Bot-------------------------------------------------
 bot.run(DISCORD_BOT_TOKEN)
