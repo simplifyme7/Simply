@@ -10,6 +10,13 @@ While Simply excels in understanding legal jargon, it’s also multilingual, cap
 
 With Simply by your side, navigating the legal landscape has never been easier. Discover more about Simply and its features on the SimplyAI discord server, where understanding legal terms is made simple.
 
+## Key Features
+
+- **AI-Driven Text Responses:** Simply Bot can generate text responses to messages using Google's generative AI.
+- **5+ File Types Supported:** Simply can also respond to images, PDFs, text files and more. (Images should be under 2.5 Megs)
+- **User Message History Management:** Simply maintains a history of user interactions via discordIDs, allowing for context-aware conversations.
+- **Customizable Settings:** Users can adjust various parameters like message history length and AI response settings. Learn more in the [Customization](#customization) section.
+
 ## Installation
 
 1. Clone the repository to your local machine.
@@ -42,3 +49,5 @@ The bot will start listening to messages in the specific channel of your Discord
 
 - You can join the official SimplyAI discord server and use Simply for free at https://discord.gg/jDGJms44Cw
 - Optionally, you can also add Simply to your own server with https://discord.com/oauth2/authorize?client_id=1161496541421391884
+
+## Customization
