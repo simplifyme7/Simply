@@ -84,6 +84,17 @@ async def info(interaction: discord.Interaction):
         ephemeral=True
     )
 
+@bot.tree.command(name="classification", description="Describes the classifications of grades scored by Simply.")
+async def classification(interaction: discord.Interaction):
+    await interaction.response.send_message(
+        "**Grade A:** The best in terms of services. They treat you fairly, respect your rights, and will not abuse your data.\n\n"
+        "**Grade B:** The terms of services are fair towards the user but they could be improved.\n\n"
+        "**Grade C:** The terms of service are okay but some issues need your consideration.\n\n"
+        "**Grade D:** The terms of service are very uneven or there are some important issues that need your attention.\n\n"
+        "**Grade E:** The terms of service raise very serious concerns.\n\n",
+        ephemeral=True
+    )
+
 @bot.event
 async def on_message(message):
     await process_message(message)
