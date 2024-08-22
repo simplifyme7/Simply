@@ -34,7 +34,7 @@ The bot will start listening to messages in the specific channel of your Discord
 1. Edit the `.env` file and fill in the following values
 
 - `DISCORD_BOT_TOKEN`: Your Discord bot token.
-- `GOOGLE_AI_KEY`: Your Google AI API key. Google API Key can be acquired from https://makersuite.google.com/
+- `GOOGLE_AI_KEY`: Your Google AI API key. Google API Key can be acquired from [Google AI Studio](https://aistudio.google.com/app/apikey).
 - `MAX_HISTORY`: The maximum number of messages to retain in history for each user. 0 will disable history
 - `TEST_CHANNEL`: The name of the channel where you would like to test Simply. (Optional)
 - `PUBLIC_CHANNEL`: The name of the channel where you would like everyone to use Simply.
@@ -43,8 +43,8 @@ The bot will start listening to messages in the specific channel of your Discord
 
 ## Commands
 
-- **Mention or reply to the bot to activate:** History only works on pure text input.
-- `/reset`: Resets and clears the user chat history with the bot. History automatically resets after 15 messages.
+- **Mention or reply to Simply to activate:** History only works on pure text input.
+- `/reset`: Resets and clears the user chat history with Simply. History automatically resets after 15 messages.
 - `/info`: Provides basic info and description about Simply.
 - `/classification`: Describes the classification of grades scored by Simply.
 
