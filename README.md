@@ -35,8 +35,8 @@ Created by [Simplify Me](https://simplify-me.com/simply/).
 
 1. Clone the repository:  
 ```
-git clone [https://github.com/your-repo/simply.git](https://github.com/simplifyme7/Simply.git)
-cd Simply
+   git clone [https://github.com/your-repo/simply.git](https://github.com/simplifyme7/Simply.git)
+   cd Simply
 ```
 2. Install the required Python libraries:
 
@@ -57,7 +57,7 @@ The bot will start listening to messages in the specified channel of your Discor
 
 2. Run `SimplyAIBot.py`
 ```
-python SimplyAIBot.py
+   python SimplyAIBot.py
 ```
    
 ## Commands
