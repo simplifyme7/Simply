@@ -1,43 +1,49 @@
-![Join the SimplyAI Discord](https://discord.com/api/guilds/1160456490260369448/widget.png?style=shield)
+<a target="_blank" href="https://discord.com/oauth2/authorize?client_id=1161496541421391884"><img src="https://dcbadge.limes.pink/api/shield/1161496541421391884?bot=true" alt="" /></a>
+<a target="_blank" href="https://www.linkedin.com/in/aarush-kumar-32a414301/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" /></a>
+<a target="_blank" href="https://discord.gg/eaEURGYM8S"><img src="https://dcbadge.limes.pink/api/server/eaEURGYM8S" alt="Discord Server Badge" /></a>
 
 ## Table of Contents
-1. [Key Features ](#key-features)
-2. [Installation](#installation)
-3. [Configuration](#configuration)
-4. [Commands](#commands)
-5. [Customization](#customization)
-6. [Discord](#discord)
+1. [Introduction](#introduction)
+2. [Key Features](#key-features)
+3. [Installation](#installation)
+4. [Configuration](#configuration)
+5. [Commands](#commands)
+6. [Customization](#customization)
 
-# Meet Simply: Your New Tool for Decoding Legalese
+## Introduction
 
-Introducing Simply, your ultimate companion in deciphering the complexities of Privacy Policies and Terms of Service! Simply is designed to simplify legal documents effortlessly.
+**Simply** is your ultimate companion in deciphering the complexities of Privacy Policies and Terms of Service. Designed to simplify legal documents effortlessly, Simply helps you understand these daunting documents with ease.
 
-Do you find Privacy Policies and Terms of Service daunting? You’re not alone. They’re often lengthy, filled with confusing jargon, and difficult to navigate. Simply steps in as your personal assistant, offering clear grades and easy-to-understand summaries that highlight crucial clauses.
+Are you overwhelmed by lengthy, jargon-filled legal agreements? You’re not alone. Simply steps in as your personal assistant, offering clear grades and easy-to-understand summaries that highlight crucial clauses.
 
 Simply supports a variety of file types, including images, PDFs, and text files. It can analyze up to 15 previous messages to provide context and understanding. Worried about your privacy? Simply allows you to reset and clear your message history as needed.
 
-While Simply excels in understanding legal jargon, it’s also multilingual, capable of communicating in over 45 languages. Whether you’re a casual user looking to understand what you’re agreeing to or a frequent navigator of online agreements, Simply is your go-to tool for clarity and simplicity. Best of all, Simply is free to use and extensively trained on a diverse dataset of legal documents.
+Simply is also multilingual, capable of communicating in over 45 languages. Whether you’re a casual user looking to understand what you’re agreeing to or a frequent navigator of online agreements, Simply is your go-to tool for clarity and simplicity. Best of all, Simply is free to use and extensively trained on a diverse dataset of legal documents.
 
-With Simply by your side, navigating the legal landscape has never been easier. Discover more about Simply and its features on the [SimplyAI](https://discord.gg/jDGJms44Cw) discord server, where understanding legal terms is made simple.
+Discover more about Simply and its features on the [SimplyAI Discord server](https://discord.gg/jDGJms44Cw), where understanding legal terms is made simple.
 
-Created by [Simplify Me.](https://simplify-me.com/simply/)
+Created by [Simplify Me](https://simplify-me.com/simply/).
 
 ## Key Features
 
-- **AI-Driven Text Responses:** Simply can generate text responses to messages using Google's generative AI.
-- **5+ File Types Supported:** Simply can also respond to images, PDFs, text files and more. (Images should be under 2.5 MB)
-- **User Message History Management:** Simply maintains a history of user interactions via discordIDs, allowing for context-aware conversations.
-- **Customizable Settings:** Users can adjust various parameters like message history length and AI response settings. Learn more in the [Customization](#customization) section.
+- **AI-Driven Text Responses:** Generate text responses to messages using Google's generative AI.
+- **Supports 5+ File Types:** Responds to images, PDFs, text files, and more (Images should be under 2.5 MB).
+- **User Message History Management:** Maintains a history of user interactions via Discord IDs, allowing for context-aware conversations.
+- **Customizable Settings:** Adjust various parameters like message history length and AI response settings. Learn more in the [Customization](#customization) section.
 
 ## Installation
 
-1. Clone the repository.
+1. Clone the repository:  
+```
+git clone [https://github.com/your-repo/simply.git](https://github.com/simplifyme7/Simply.git)
+cd Simply
+```
 2. Install the required Python libraries:
 
-   ```
+```
    pip install -U -r requirements.txt
-   ```
-The bot will start listening to messages in the specific channel of your Discord server. It responds to direct mentions or direct replies.
+```
+The bot will start listening to messages in the specified channel of your Discord server. It responds to direct mentions or direct replies.
 
 ## Configuration
 
@@ -50,18 +56,17 @@ The bot will start listening to messages in the specific channel of your Discord
 - `PUBLIC_CHANNEL` The name of the channel where you would like everyone to use Simply.
 
 2. Run `SimplyAIBot.py`
-
+```
+python SimplyAIBot.py
+```
+   
 ## Commands
 
-- **Mention or reply to Simply to activate:** History only works on pure text input.
-- `/reset` Resets and clears the user chat history with Simply. History automatically resets after passing the `MAX_HISTORY`.
+- **Activate Simply**: Mention or reply to Simply to activate it. History only works with pure text input.
+- `/reset` Resets and clears the user chat history with Simply. History automatically resets after reaching the `MAX_HISTORY`.
 - `/info` Provides basic info and description about Simply.
 - `/classification` Describes the classification of grades scored by Simply.
 
 ## Customization
 
-## Discord
-
-
-- You can join the official SimplyAI discord server and use Simply for free at https://discord.gg/jDGJms44Cw
-- Optionally, you can also add Simply to your own server with https://discord.com/oauth2/authorize?client_id=1161496541421391884
+(Coming Soon...)
