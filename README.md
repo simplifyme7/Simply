@@ -1,3 +1,5 @@
+![Join the SimplyAI Discord](https://discord.com/api/guilds/1160456490260369448/widget.png?style=shield)
+
 ## Table of Contents
 1. [Key Features ](#key-features)
 2. [Installation](#installation)
@@ -59,6 +61,7 @@ The bot will start listening to messages in the specific channel of your Discord
 ## Customization
 
 ## Discord
+
 
 - You can join the official SimplyAI discord server and use Simply for free at https://discord.gg/jDGJms44Cw
 - Optionally, you can also add Simply to your own server with https://discord.com/oauth2/authorize?client_id=1161496541421391884
