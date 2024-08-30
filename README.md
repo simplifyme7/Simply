@@ -1,5 +1,13 @@
 # Meet Simply: Your New Tool for Decoding Legalese
 
+## Table of Contents
+1. [Key Features ](#key-features)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Commands](#commands)
+5. [Customization](#customization)
+6. [Discord](#discord)
+
 Introducing Simply, your ultimate companion in deciphering the complexities of Privacy Policies and Terms of Service! Simply is designed to simplify legal documents effortlessly.
 
 Do you find Privacy Policies and Terms of Service daunting? You’re not alone. They’re often lengthy, filled with confusing jargon, and difficult to navigate. Simply steps in as your personal assistant, offering clear grades and easy-to-understand summaries that highlight crucial clauses.
@@ -21,7 +29,7 @@ Created by [Simplify Me.](https://simplify-me.com/simply/)
 
 ## Installation
 
-1. Clone the repository to your local machine.
+1. Clone the repository.
 2. Install the required Python libraries:
 
    ```
@@ -33,24 +41,24 @@ The bot will start listening to messages in the specific channel of your Discord
 
 1. Edit the `.env` file and fill in the following values
 
-- `DISCORD_BOT_TOKEN`: Your Discord bot token.
-- `GOOGLE_AI_KEY`: Your Google AI API key. Google API Key can be acquired from [Google AI Studio](https://aistudio.google.com/app/apikey).
-- `MAX_HISTORY`: The maximum number of messages to retain in history for each user. 0 will disable history
-- `TEST_CHANNEL`: The name of the channel where you would like to test Simply. (Optional)
-- `PUBLIC_CHANNEL`: The name of the channel where you would like everyone to use Simply.
+- `DISCORD_BOT_TOKEN` Your Discord bot token.
+- `GOOGLE_AI_KEY` Your Google AI API key. Free Google API Keys can be acquired from [Google AI Studio](https://aistudio.google.com/app/apikey).
+- `MAX_HISTORY` The maximum number of messages to retain in history for each user. 0 will disable history
+- `TEST_CHANNEL` The name of the channel where you would like to test Simply. (Optional)
+- `PUBLIC_CHANNEL` The name of the channel where you would like everyone to use Simply.
 
 2. Run `SimplyAIBot.py`
 
 ## Commands
 
 - **Mention or reply to Simply to activate:** History only works on pure text input.
-- `/reset`: Resets and clears the user chat history with Simply. History automatically resets after 15 messages.
-- `/info`: Provides basic info and description about Simply.
-- `/classification`: Describes the classification of grades scored by Simply.
+- `/reset` Resets and clears the user chat history with Simply. History automatically resets after passing the `MAX_HISTORY`.
+- `/info` Provides basic info and description about Simply.
+- `/classification` Describes the classification of grades scored by Simply.
+
+## Customization
 
 ## Discord
 
 - You can join the official SimplyAI discord server and use Simply for free at https://discord.gg/jDGJms44Cw
 - Optionally, you can also add Simply to your own server with https://discord.com/oauth2/authorize?client_id=1161496541421391884
-
-## Customization
