@@ -1,5 +1,3 @@
-# Meet Simply: Your New Tool for Decoding Legalese
-
 ## Table of Contents
 1. [Key Features ](#key-features)
 2. [Installation](#installation)
@@ -7,6 +5,8 @@
 4. [Commands](#commands)
 5. [Customization](#customization)
 6. [Discord](#discord)
+
+# Meet Simply: Your New Tool for Decoding Legalese
 
 Introducing Simply, your ultimate companion in deciphering the complexities of Privacy Policies and Terms of Service! Simply is designed to simplify legal documents effortlessly.
 
