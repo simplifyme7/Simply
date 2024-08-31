@@ -35,13 +35,13 @@ Created by [Simplify Me](https://simplify-me.com/simply/).
 
 1. Clone the repository:  
 ```
-   git clone https://github.com/simplifyme7/Simply.git
-   cd Simply
+git clone https://github.com/simplifyme7/Simply.git
+cd Simply
 ```
 2. Install the required Python libraries:
 
 ```
-   pip install -U -r requirements.txt
+pip install -U -r requirements.txt
 ```
 The bot will start listening to messages in the specified channel of your Discord server. It responds to direct mentions or direct replies.
 
@@ -57,12 +57,12 @@ The bot will start listening to messages in the specified channel of your Discor
 
 2. Run `SimplyAIBot.py`
 ```
-   python SimplyAIBot.py
+python SimplyAIBot.py
 ```
    
 ## Commands
 
-- **Activate Simply**: Mention or reply to Simply to activate it. History only works with pure text input.
+- **Activate Simply**: Mention or reply to activate Simply. History only works with pure text input.
 - `/reset` Resets and clears the user chat history with Simply. History automatically resets after reaching the `MAX_HISTORY`.
 - `/info` Provides basic info and description about Simply.
 - `/classification` Describes the classification of grades scored by Simply.
